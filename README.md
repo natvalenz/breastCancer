@@ -28,6 +28,7 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 #### Input variables: 
 -	ID number
 -	3-32) Ten real-valued features are computed for each cell nucleus:
+
               - a) radius (mean of distances from center to points on the perimeter)
               - b) texture (standard deviation of gray-scale values)
               - c) perimeter
