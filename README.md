@@ -8,6 +8,7 @@ Breast cancer is the most common type of cancer at a staggering 12% of new cases
 
 ## Dataset
 The Breast Cancer Wisconsin (Diagnostic) Data Set was taken from the UCI Machine Learning Repository. The features describe characteristics of the cell nuclei present computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. The data consists of the characteristics of 569 breast mass images with thirty-three variables.
+
 Source:  https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)
 
 ## Purpose of the analysis
@@ -25,18 +26,19 @@ Output variable:
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 
 Input variables: 
--	1) ID number
--	3-32) Ten real-valued features are computed for each cell nucleus:
--	a) radius (mean of distances from center to points on the perimeter)
--	b) texture (standard deviation of gray-scale values)
--	c) perimeter
--	d) area
--	e) smoothness (local variation in radius lengths)
--	f) compactness (perimeter^2 / area - 1.0)
--	g) concavity (severity of concave portions of the contour)
--	h) concave points (number of concave portions of the contour)
--	i) symmetry
--	j) fractal dimension ("coastline approximation" - 1)
+-	1. ID number
+-	3-32. Ten real-valued features are computed for each cell nucleus:
+ -	a) radius (mean of distances from center to points on the perimeter)
+ -	b) texture (standard deviation of gray-scale values)
+ -	c) perimeter
+ -	d) area
+ -	e) smoothness (local variation in radius lengths)
+ -	f) compactness (perimeter^2 / area - 1.0)
+ -	g) concavity (severity of concave portions of the contour)
+ -	h) concave points (number of concave portions of the contour)
+ -	i) symmetry
+ -	j) fractal dimension ("coastline approximation" - 1)
+
 For each breast mass FNA image the mean, standard error, and “worst” or largest (mean of the three largest values) measure was calculated for the ten features from a) to j), resulting in thirty features. For example, columns named radius_mean, radius_se, and radius_worst.
 
 ## Data Preprocessing, Data Partitioning, and Feature Selection
