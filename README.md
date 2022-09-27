@@ -26,8 +26,8 @@ Output variable:
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 
 Input variables: 
--	1. ID number
--	3-32. Ten real-valued features are computed for each cell nucleus:
+-	1) ID number
+-	3-32) Ten real-valued features are computed for each cell nucleus:
  -	a) radius (mean of distances from center to points on the perimeter)
  -	b) texture (standard deviation of gray-scale values)
  -	c) perimeter
