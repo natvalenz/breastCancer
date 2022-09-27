@@ -12,7 +12,7 @@ The Breast Cancer Wisconsin (Diagnostic) Data Set was taken from the UCI Machine
 Source:  https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)
 
 ## Purpose of the analysis
-When I worked for a pathology lab, let us call it LadCorp, I observed how complex the process to generate biopsy results is. The purpose of this analysis is to use machine learning to classify benign or malignant breast cancer diagnosis based on a portion of the characteristics of a FNA of a breast mass. To use data science to make a complicated and lengthy process an easier one. The goal of this project is to build a model that can accurately predict the diagnosis of breast cancer tissues as either malignant or benign.
+When I worked for a pathology lab, I observed how complex the process to generate biopsy results is. The purpose of this analysis is to use machine learning to classify benign or malignant breast cancer diagnosis based on a portion of the characteristics of a FNA of a breast mass. To use data science to make a complicated and lengthy process an easier one. The goal of this project is to build a model that can accurately predict the diagnosis of breast cancer tissues as either malignant or benign.
 
 ## Research Question
 How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machines (SVM), Naïve Bayes (NB), Stochastic Gradient Descent (SGD), and K Nearest Neighbors (KNN) compare with each other in classifying whether a mass is benign or malignant based on the FNA’s characteristics? 
