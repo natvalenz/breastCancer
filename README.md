@@ -18,19 +18,19 @@ When I worked for a pathology lab, let us call it LadCorp, I observed how comple
 How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machines (SVM), Naïve Bayes (NB), Stochastic Gradient Descent (SGD), and K Nearest Neighbors (KNN) compare with each other in classifying whether a mass is benign or malignant based on the FNA’s characteristics? 
 
 ## Variables
-Output variable:
+#### Output variable:
 -	Diagnosis (M = malignant, B = benign)
 357 observations in the benign class and 212 observations in the smaller malignant class. The distribution of the target variable is not the best (50-50), but it is not terrible either at a 37% malignant and 63% benign distribution. ROC, F1 score, precision and recall scores were used to evaluate the algorithms to compensate for this slight imbalance.
 
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 
-Input variables: 
+#### Input variables: 
 -	ID number
 -	3-32) Ten real-valued features are computed for each cell nucleus:
-  *	a) radius (mean of distances from center to points on the perimeter)
-  *	b) texture (standard deviation of gray-scale values)
-  *	c) perimeter
+              - a) radius (mean of distances from center to points on the perimeter)
+              - b) texture (standard deviation of gray-scale values)
+              - c) perimeter
   -	d) area
   -	e) smoothness (local variation in radius lengths)
   -	f) compactness (perimeter^2 / area - 1.0)
