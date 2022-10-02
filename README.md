@@ -53,9 +53,10 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture23.png)
 
 
+The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
 
+### Feature Importance Graph- Logistic Regression
+![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture25.png)
 
-
-
- 
-
+### Feature Importance Graph- Lasso
+![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture26.png)
