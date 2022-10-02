@@ -25,6 +25,10 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 
+- The distribution of the target variable is not the best (50/50), but it isn’t terrible either at a 37/63% distribution. 
+- The malignant diagnosis is the smaller class.
+
+
 #### Input variables: 
 -	ID number
 -	3-32) Ten real-valued features are computed for each cell nucleus:
@@ -49,8 +53,15 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 ### Heatmap
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture22.png)
 
+- Multicollinearity is a real problem in this dataset. 
+- Not only are the mean, standard error and worst measures correlated, but some of the variables such as radius, perimeter, and area are highly correlated.  
+- The other problem variables are compactness, concavity, concave points, and fractal_dimension. 
+
 ### Pairplot
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture23.png)
+- Got to love pair plots this is a great visual summary showing how some of the variables are great for the classification models and others will not be. 
+- It also shows if skewness is present allowing us to dig further into those features.
+![image](https://user-images.githubusercontent.com/76970958/193478544-203ce7c0-b3f0-43aa-8b20-9101e2c664ba.png)
 
 
 The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
