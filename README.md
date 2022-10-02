@@ -25,8 +25,8 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 
-- The distribution of the target variable is not the best (50/50), but it isn’t terrible either at a 37/63% distribution. 
-- The malignant diagnosis is the smaller class.
+![image](https://user-images.githubusercontent.com/76970958/193478605-206e6f25-8a97-47fd-a457-354ba8c85a9f.png)
+
 
 
 #### Input variables: 
@@ -52,15 +52,11 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 
 ### Heatmap
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture22.png)
+![image](https://user-images.githubusercontent.com/76970958/193478587-4fcc0b40-3c0d-436a-880f-ad9daf38da71.png)
 
-- Multicollinearity is a real problem in this dataset. 
-- Not only are the mean, standard error and worst measures correlated, but some of the variables such as radius, perimeter, and area are highly correlated.  
-- The other problem variables are compactness, concavity, concave points, and fractal_dimension. 
 
 ### Pairplot
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture23.png)
-- Got to love pair plots this is a great visual summary showing how some of the variables are great for the classification models and others will not be. 
-- It also shows if skewness is present allowing us to dig further into those features.
 ![image](https://user-images.githubusercontent.com/76970958/193478544-203ce7c0-b3f0-43aa-8b20-9101e2c664ba.png)
 
 
