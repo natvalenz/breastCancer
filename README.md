@@ -24,7 +24,6 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
-
 ![image](https://user-images.githubusercontent.com/76970958/193478605-206e6f25-8a97-47fd-a457-354ba8c85a9f.png)
 
 
@@ -59,11 +58,12 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture23.png)
 ![image](https://user-images.githubusercontent.com/76970958/193478544-203ce7c0-b3f0-43aa-8b20-9101e2c664ba.png)
 
-
-The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
-
-### Feature Importance Graph- Logistic Regression
+### Feature Importance Graph- Random Forest
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture25.png)
+![image](https://user-images.githubusercontent.com/76970958/193478746-a445650d-46ef-4ece-86a9-8540977485b6.png)
 
 ### Feature Importance Graph- Lasso
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture26.png)
+![image](https://user-images.githubusercontent.com/76970958/193478762-fd44e7df-6ec1-4d55-85c4-c7310d2e5698.png)
+
+The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
