@@ -20,7 +20,8 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
-- The distribution of the target variable is not the best (50/50) but it isn’t terrible either at a 37/63% distribution. 
+
+The distribution of the target variable is not the best (50/50) but it isn’t terrible either at a 37/63% distribution. 
 
 #### Input variables: 
 -	ID number
@@ -54,10 +55,12 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 
 ### Feature Importance Graph- Random Forest
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture25.png)
+
 Random Forest revealed radius_worst is a very important feature.
 
 ### Feature Importance Graph- Lasso
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture26.png)
+
 The Lasso coefficients indicated concave point_mean as the most important variable.
 
 The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
@@ -66,14 +69,15 @@ The data was split into 70% training data and 30% testing data. There are a lot 
 A Logistic Regression (Ridge and Lasso), NB (Gaussian), SVM, SGD (and SG Boosting), Decision Tree, Random Forest, and KNN models were applied. The training data was used to fit the model. In an intent to improve the results the seven classification algorithms were applied using a plethora of subsets of the variables. A model with all the features was used to try to reduce the number of malignant cases that were misclassified. 
 In health especially with cancer diagnosis false negatives are bad. Each model was hyper tuned using ROC for scoring and Repeated Stratified K-Fold was used for cross validation to compensate for the slight imbalance of the distribution of the outcome variable. Repeated Stratified K-Fold is a cross validator that maintains the same class ratio throughout the K folds as the ratio in the original dataset. The best model was Logistic Regression. This model had a ROC score of 98% with only one malignant case classified incorrectly.
 
+### ROC Curve
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture28.png)
 
-- The ROC Curve shows the model is doing a lot better than just flipping a coin.
-- At a 98% score the model is doing really good.
+The ROC Curve shows the model is doing a lot better than just flipping a coin. At a 98% score the model is doing really good.
 
+### Confusion Matrix
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture29.png)
-- 0 is Benign and 1 is Malignant (the smaller class)
-- For the best logistic regression model the confusion matrix shows only 1 Malignant case inaccurately classified as benign.
+
+0 is Benign and 1 is Malignant (the smaller class). For the best logistic regression model the confusion matrix shows only 1 Malignant case inaccurately classified as benign.
 
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture30.png)
 
