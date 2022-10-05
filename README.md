@@ -21,7 +21,6 @@ How do Decision Tree, Random Forest, Logistic Regression, Support Vector Machine
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture20.png)
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture21.png)
 - The distribution of the target variable is not the best (50/50) but it isn’t terrible either at a 37/63% distribution. 
-- The malignant diagnosis is the smaller class. 
 
 #### Input variables: 
 -	ID number
@@ -55,11 +54,11 @@ Data scientists are like bartenders they need to get the ingredients ready for d
 
 ### Feature Importance Graph- Random Forest
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture25.png)
-- Random Forest revealed radius_worst is a very important feature.
+Random Forest revealed radius_worst is a very important feature.
 
 ### Feature Importance Graph- Lasso
 ![alt text](https://github.com/natvalenz/breastCancer/blob/main/Picture26.png)
-- The Lasso coefficients indicated concave point_mean as the most important variable.
+The Lasso coefficients indicated concave point_mean as the most important variable.
 
 The data was split into 70% training data and 30% testing data. There are a lot of variables, and the algorithms were performing below what was expected, so feature importance using Decision Trees and Lasso were used to select the most important variables. Different subsets of the variables were used taking feature selection methods and multicollinearity into account. 
 
@@ -82,6 +81,6 @@ In health especially with cancer diagnosis false negatives are bad. Each model w
 A variety of models and hyperparameter tuning was performed to improve the results. The best model overall was Logistic Regression. The model’s confusion matrix shows only one malignant case inaccurately categorized as benign and two benign cases inaccurately classified. The ROC Curve shows the model is doing a lot better than just flipping a coin at a 98% score. The second best was the Random Forest. This model’s confusion matrix shows two malignant and two benign cases inaccurately classified. The ROC Curve shows a 96% score which is great, but it is not as good as the Logistic Regression model. A residual outlier sensitivity check was conducted. I looked at the outlier residuals between the predicted probabilities and the actual outcome and found one observation (73) that the model was 99% sure it was benign, but it was malignant. I dropped this “outlier”, but it did not significantly improve the algorithms and it could be a representative case, so the results from that subset were not taken very seriously. In the future a bigger set of variable observations is needed to improve the predictions and make this a trustworthy model.
 
 ## Sources
-https://www.stopbreastcancer.org/information-center/facts-figures/
-https://www.breastcancer.org/facts-statistics
-https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)
+- https://www.stopbreastcancer.org/information-center/facts-figures/
+- https://www.breastcancer.org/facts-statistics
+- https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)
